@@ -1,0 +1,6 @@
+type MenuItem {
+  id: ID! @id
+  imageURL: String
+  name: String!
+  price: Float!
+}

@@ -1,0 +1,21 @@
+version: '3.2' # specify docker-compose version
+
+# Define the services/ containers to be run
+services:
+  react-client: # name of the first service
+    build: client # specify the directory of the Dockerfile
+    container_name: react-client
+    ports:
+    - "3000:3000" # specify port mapping
+    volumes:
+    - ./client:/usr/src/app
+
+  apollo-server: # name of the second service
+    build: server # specify the directory of the Dockerfile
+    container_name: apollo_server
+    ports:
+    - "4000:4000" #specify ports mapping
+    links:
+    - mongodb # link this service to the database service
+    volumes:
+    - ./server:/usr/src/app
