@@ -8,7 +8,7 @@
     "antd": "^3.19.8",
     "apollo-boost": "0.4.3",
     "graphql": "14.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "16.8.6",
     "react-apollo": "2.5.8",
     "react-apollo-hooks": "^0.4.5",
